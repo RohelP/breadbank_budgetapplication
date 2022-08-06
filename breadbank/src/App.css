@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
+  padding-bottom: 1px;
   margin: 40px 0 10px;
 }
 
@@ -54,7 +54,7 @@ h4 {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .inc-exp-container > div {
@@ -94,6 +94,7 @@ input[type='number'] {
   font-size: 16px;
   padding: 10px;
   width: 100%;
+
 }
 
 .btn {
@@ -114,13 +115,12 @@ input[type='number'] {
   outline: 0;
 }
 
-
 .list {
   list-style-type: none;
   padding: 0;
   position: fixed;
   left: 150px;
-  top: 420px;
+  top: 270px;
 }
 
 .list li {
@@ -161,16 +161,16 @@ input[type='number'] {
 .history {
   border-bottom: 0.5px solid #bbb;
   padding-bottom: 10px;
-  position: relative;
-  right: 650px;
-  top: 0px;
+  position: absolute;
+  right: 1590px;
+  top: 211px;
 }
 
 .balancename {
   padding-bottom: 10px;
   position: absolute;
   right: 870px;
-  top: 205px;
+  top: 233px;
   font-size: 22px;
 }
 
@@ -179,7 +179,7 @@ input[type='number'] {
   position: absolute;
   margin: auto;
   right: auto;
-  top: 230px;
+  top: 257px;
 }
 
 .chart {
@@ -193,7 +193,7 @@ input[type='number'] {
 .transaction_name {
   position: absolute;
   margin: auto;
-  top: 395px;
+  top: 410px;
 }
 
 .list li:hover .delete-btn {

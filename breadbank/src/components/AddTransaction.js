@@ -32,7 +32,7 @@ export const AddTransaction = (props) => {
 
   return (
     <>
-      <h3 className='transaction_name'>Add new transaction</h3>
+      <h3 className='transaction_name'>Add New Transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">Text</label>

@@ -10,7 +10,7 @@ export const TransactionList = (props) => {
 
   return (
     <>
-      <h3 className='history'>History</h3>
+      <h3 className='history'>History of Transactions</h3>
       <ul className="list">
         {transactions.map(transaction => (<Transaction key={transaction.id} transaction={transaction} />))}
       </ul>
