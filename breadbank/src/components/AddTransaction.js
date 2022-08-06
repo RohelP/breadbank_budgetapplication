@@ -1,10 +1,14 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
 
-export const AddTransaction = () => {
+export const AddTransaction = (props) => {
+  const totalAmount = props.amount
+  const setTotalAmount = props.setAmount
+  const expense = props.expense
+  const setExpense = props.setExpense
+
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
-
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = e => {
@@ -15,7 +19,14 @@ export const AddTransaction = () => {
       text,
       amount: +amount
     }
+    if(Number(amount)> 0){
+      setTotalAmount(Number(totalAmount)+Number(amount))
+    }
+    else{
+      setExpense(Number(expense)-Number(amount))
+    }
 
+    
     addTransaction(newTransaction);
   }
 
