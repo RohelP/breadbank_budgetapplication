@@ -26,8 +26,8 @@ export const Balance = () => {
 
   return (
     <>
-      <h4>Your Balance</h4>
-    <h1>{moneyFormatter(total)}</h1>
+      <h4 className='balancename'>Your Balance</h4>
+    <h1 className='balanceamount'>{moneyFormatter(total)}</h1>
     </>
   )
 }
