@@ -19,7 +19,7 @@ function App() {
         <IncomeExpenses />
         <TransactionList />
         <AddTransaction />
-        <PieChart />
+        
       </div>
     </GlobalProvider>
     
