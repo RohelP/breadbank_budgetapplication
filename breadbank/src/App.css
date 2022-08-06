@@ -24,7 +24,6 @@ body {
   width: 350px;
 }
 
-
 h1 {
   letter-spacing: 1px;
   margin: 0;
@@ -33,7 +32,7 @@ h1 {
 h2 {
   position: absolute;
   color: #8400ff;
-  margin-left: -685px;
+  margin-left: -650px;
   margin-top: -150px;
   font-size: 30px;
 }
@@ -120,8 +119,8 @@ input[type='number'] {
   list-style-type: none;
   padding: 0;
   position: absolute;
-  left: 100px;
-  top: 390px;
+  left: 150px;
+  top: 420px;
 }
 
 .list li {
@@ -160,10 +159,10 @@ input[type='number'] {
 }
 
 .history {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 0.5px solid #bbb;
   padding-bottom: 10px;
   position: relative;
-  right: 685px;
+  right: 650px;
   top: 0px;
 }
 
@@ -171,7 +170,7 @@ input[type='number'] {
   padding-bottom: 10px;
   position: absolute;
   right: 870px;
-  top: 150px;
+  top: 205px;
   font-size: 22px;
 }
 
@@ -180,8 +179,23 @@ input[type='number'] {
   position: absolute;
   margin: auto;
   right: auto;
-  top: 190px;
+  top: 230px;
 }
+
+.chart {
+  position: absolute;
+  margin: auto;
+  right: 200px;
+  top: 250px;
+  height: 350px;
+}
+
+.transaction_name {
+  position: absolute;
+  margin: auto;
+  top: 395px;
+}
+
 .list li:hover .delete-btn {
   opacity: 1;
 }

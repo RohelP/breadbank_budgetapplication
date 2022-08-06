@@ -3,7 +3,9 @@ import { Transaction } from './Transaction';
 
 import { GlobalContext } from '../context/GlobalState';
 
-export const TransactionList = () => {
+export const TransactionList = (props) => {
+  const amount = props.amount
+  const expense = props.expense
   const { transactions } = useContext(GlobalContext);
 
   return (

@@ -20,7 +20,7 @@ function App() {
       <div className="container">
         <Balance />
         <IncomeExpenses />
-        <TransactionList />
+        <TransactionList amount={amount} expense={expense} />
         <AddTransaction amount={amount} setAmount={setAmount} expense={expense} setExpense={setExpense}/>
         <PieChart amount={amount} expense={expense}/>
       </div>

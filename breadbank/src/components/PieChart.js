@@ -26,7 +26,6 @@ export const PieChart = (props) => {
   }
   return (
     <div className='chart'>
-      Expense, Income and Goal relational data
       <Pie data={chartData}
         options={{
           maintainAspectRatio: false
