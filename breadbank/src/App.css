@@ -29,6 +29,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: #8400ff;
+  margin-top: 60px;
+  margin-bottom: 200px;
+  margin-right: 1700px;
+  margin-left: 80px;
+  font-size: 22px;
+}
+
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
