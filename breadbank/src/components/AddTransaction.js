@@ -6,10 +6,13 @@ export const AddTransaction = (props) => {
   const setTotalAmount = props.setAmount
   const expense = props.expense
   const setExpense = props.setExpense
+  const setGoal = props.setGoal
+
 
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
   const { addTransaction } = useContext(GlobalContext);
+  const [goalAmount,setGoalAmount] = useState(0);
 
   const onSubmit = e => {
     e.preventDefault();
@@ -49,8 +52,9 @@ export const AddTransaction = (props) => {
       </form>
 
       <h3 className='textbox' htmlFor="text">Goal Box</h3>
-          <input className='entertext' type="text" placeholder="Enter Goals..." />
-          <button className="goaladd">Add Goal</button>
+          <input className='entertext' type="text" placeholder="Enter Goals..." onChange={(e) => {setGoalAmount(e.target.value)
+          console.log(goalAmount)}}/>
+          <button className="goaladd" onClick={() => setGoal(goalAmount)}>Add Goal</button>
     </>
   )
 }

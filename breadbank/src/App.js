@@ -14,6 +14,7 @@ import './App.css';
 function App() {
   const [amount, setAmount] = useState(0);
   const [expense, setExpense] = useState(0);
+  const [goal, setGoal] = useState(0);
   return (
     <GlobalProvider>
       <Header />
@@ -21,8 +22,8 @@ function App() {
         <Balance />
         <IncomeExpenses />
         <TransactionList amount={amount} expense={expense} />
-        <AddTransaction amount={amount} setAmount={setAmount} expense={expense} setExpense={setExpense}/>
-        <PieChart amount={amount} expense={expense}/>
+        <AddTransaction amount={amount} setAmount={setAmount} expense={expense} setExpense={setExpense} goal={goal} setGoal={setGoal}/>
+        <PieChart amount={amount} expense={expense} goal={goal}/>
       </div>
     </GlobalProvider>
     

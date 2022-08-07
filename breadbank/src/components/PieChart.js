@@ -5,13 +5,14 @@ import { Pie } from 'react-chartjs-2'
 export const PieChart = (props) => {
   const amount = props.amount
   const expense = props.expense
+  const goal = props.goal
   let chartData = {
     labels: ['Income','Expenses','Goal'],
     datasets:[
       {
         label:'Population',
         data:[
-          amount,expense
+          amount,expense,goal
         ],
         backgroundColor:[
           'rgba(255, 99, 132, 0.2)',
