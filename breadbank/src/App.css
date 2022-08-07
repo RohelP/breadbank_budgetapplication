@@ -176,7 +176,7 @@ input[type='number'] {
   padding-bottom: 10px;
   position: absolute;
   right: 780px;
-  top: 160px;
+  top: 170px;
   font-size: 22px;
 }
 
@@ -199,7 +199,7 @@ input[type='number'] {
 .transaction_name {
   position: absolute;
   margin: auto;
-  top: 365px;
+  top: 375px;
   right: 860px;
 }
 
