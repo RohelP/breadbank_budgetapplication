@@ -17,14 +17,21 @@ function moneyFormatter(num) {
   );
 }
 
-export const Transaction = ({ transaction }) => {
+export const Transaction = ( { transaction,amount,expense,setAmount,setExpense }) => {
   const { deleteTransaction } = useContext(GlobalContext);
-
   const sign = transaction.amount < 0 ? '-' : '+';
-
+  console.log(amount,expense)
   return (
     <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
-      {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">x</button>
+      {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span><button onClick={() => {
+        if (transaction.amount > 0) {
+          setAmount(amount-transaction.amount)
+        }
+        else {
+          setExpense(expense+transaction.amount)
+        }
+        deleteTransaction(transaction.id)
+        }} className="delete-btn">x</button>
     </li>
   )
 }

@@ -21,7 +21,7 @@ function App() {
       <div className="container">
         <Balance />
         <IncomeExpenses />
-        <TransactionList amount={amount} expense={expense} />
+        <TransactionList amount={amount} expense={expense} setAmount={setAmount} setExpense={setExpense}/>
         <AddTransaction amount={amount} setAmount={setAmount} expense={expense} setExpense={setExpense} goal={goal} setGoal={setGoal}/>
         <PieChart amount={amount} expense={expense} goal={goal}/>
       </div>
