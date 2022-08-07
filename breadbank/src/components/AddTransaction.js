@@ -47,6 +47,10 @@ export const AddTransaction = (props) => {
         </div>
         <button className="btn">Add transaction</button>
       </form>
+
+      <h3 className='textbox' htmlFor="text">Goal Box</h3>
+          <input className='entertext' type="text" placeholder="Enter Goals..." />
+          <button className="goaladd">Add Goal</button>
     </>
   )
 }
