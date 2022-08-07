@@ -9,4 +9,4 @@ Each step can only be performed, once the previous one has been completed.
 
 4) Enter "npm i react-chartjs-2 chart.js" in the terminal
 
-5) Once the installation is finished, enter "npm start" to run the application in your browser. 
+5) Once the installation is finished, enter "npm start" in the terminal to run the application in your browser. 
